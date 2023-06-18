@@ -1,6 +1,6 @@
 
 <div align="center">
-    <img title="PortunoLogo" src="portuno.png"/>
+    <img title="PortunoLogo" src="./Assets/portuno-simbolo.svg"/>
 </div>
 
 # Portuno Simple Front-end
