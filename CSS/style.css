@@ -167,6 +167,10 @@ a:hover {
   text-decoration: none;
 }
 
+#selected_menu_item {
+  color: #2565DC;
+}
+
 .select_floor select {
   padding: 8px;
   border: 0px solid transparent;
