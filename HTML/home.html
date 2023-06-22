@@ -71,17 +71,17 @@
 
 
     <div class="select_floor">
-        <select>
+        <select id="floor-select">
             <option value="terreo">Térreo</option>
             <option value="first_floor">1º Andar</option>
             <option value="second_floor">2º Andar</option>
         </select>
     </div>
 
-    
+
 
     <div class="grid-container">
-        <div class="room-item">
+        <div class="room-item" data-value="terreo">
             <h3>Lab. Fab.</h3>
             <div class="room-details">
                 <div id="status-occupied">
@@ -94,8 +94,21 @@
                 </div>
             </div>
         </div>
-        <div class="room-item">
+        <div class="room-item" data-value="terreo">
             <h3>Sala 01</h3>
+            <div class="room-details">
+                <div id="status-occupied">
+                    Ocupado
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="terreo">
+            <h3>Sala 02</h3>
             <div class="room-details">
                 <div id="status-available">
                     Disponível
@@ -107,24 +120,11 @@
                 </div>
             </div>
         </div>
-        <div class="room-item">
-            <h3>Sala 02</h3>
-            <div class="room-details">
-                <div id="status-occupied">
-                    Ocupado
-                </div>
-                <div id="show-details" width=" 26px">
-                    <i class="material-symbols-rounded">
-                        add
-                    </i>
-                </div>
-            </div>
-        </div>
-        <div class="room-item">
+        <div class="room-item" data-value="terreo">
             <h3>Ateliê</h3>
             <div class="room-details">
-                <div id="status-occupied">
-                    Ocupado
+                <div id="status-available">
+                    Disponível
                 </div>
                 <div id="show-details" width=" 26px">
                     <i class="material-symbols-rounded">
@@ -133,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="room-item">
+        <div class="room-item" data-value="terreo">
             <h3>Sala 03</h3>
             <div class="room-details">
                 <div id="status-occupied">
@@ -146,7 +146,7 @@
                 </div>
             </div>
         </div>
-        <div class="room-item">
+        <div class="room-item" data-value="terreo">
             <h3>Sala 04</h3>
             <div class="room-details">
                 <div id="status-occupied">
@@ -159,11 +159,11 @@
                 </div>
             </div>
         </div>
-        <div class="room-item">
+        <div class="room-item" data-value="terreo">
             <h3>Sala 05</h3>
             <div class="room-details">
-                <div id="status-occupied">
-                    Ocupado
+                <div id="status-available">
+                    Disponível
                 </div>
                 <div id="show-details" width=" 26px">
                     <i class="material-symbols-rounded">
@@ -172,7 +172,7 @@
                 </div>
             </div>
         </div>
-        <div class="room-item">
+        <div class="room-item" data-value="terreo">
             <h3>Lab. Tec.</h3>
             <div class="room-details">
                 <div id="status-occupied">
@@ -185,11 +185,11 @@
                 </div>
             </div>
         </div>
-        <div class="room-item">
+        <div class="room-item" data-value="terreo">
             <h3>Lab. Usab.</h3>
             <div class="room-details">
-                <div id="status-occupied">
-                    Ocupado
+                <div id="status-available">
+                    Disponível
                 </div>
                 <div id="show-details" width=" 26px">
                     <i class="material-symbols-rounded">
@@ -198,7 +198,7 @@
                 </div>
             </div>
         </div>
-        <div class="room-item">
+        <div class="room-item" data-value="terreo">
             <h3>E.J.</h3>
             <div class="room-details">
                 <div id="status-occupied">
@@ -211,7 +211,7 @@
                 </div>
             </div>
         </div>
-        <div class="room-item">
+        <div class="room-item" data-value="terreo">
             <h3>C.A.</h3>
             <div class="room-details">
                 <div id="status-occupied">
@@ -224,6 +224,267 @@
                 </div>
             </div>
         </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. 01</h3>
+            <div class="room-details">
+                <div id="status-occupied">
+                    Ocupado
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. 02</h3>
+            <div class="room-details">
+                <div id="status-available">
+                    Disponível
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. 03</h3>
+            <div class="room-details">
+                <div id="status-available">
+                    Disponível
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. 04</h3>
+            <div class="room-details">
+                <div id="status-available">
+                    Disponível
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. 05</h3>
+            <div class="room-details">
+                <div id="status-occupied">
+                    Ocupado
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. 06</h3>
+            <div class="room-details">
+                <div id="status-occupied">
+                    Ocupado
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. Jogos</h3>
+            <div class="room-details">
+                <div id="status-occupied">
+                    Ocupado
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. Computação Física</h3>
+            <div class="room-details">
+                <div id="status-occupied">
+                    Ocupado
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. P&D 01</h3>
+            <div class="room-details">
+                <div id="status-available">
+                    Disponível
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. P&D 02</h3>
+            <div class="room-details">
+                <div id="status-available">
+                    Disponível
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Lab. P&D 03</h3>
+            <div class="room-details">
+                <div id="status-available">
+                    Disponível
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="first_floor">
+            <h3>Sala de estudos pós-graduação</h3>
+            <div class="room-details">
+                <div id="status-available">
+                    Disponível
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="second_floor">
+            <h3>Sala de Reunião</h3>
+            <div class="room-details">
+                <div id="status-available">
+                    Disponível
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="second_floor">
+            <h3>Lab. Audiovisual</h3>
+            <div class="room-details">
+                <div id="status-available">
+                    Disponível
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="second_floor">
+            <h3>LABVIS</h3>
+            <div class="room-details">
+                <div id="status-occupied">
+                    Ocupado
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="room-item" data-value="second_floor">
+            <h3>Sala dos Professores</h3>
+            <div class="room-details">
+                <div id="status-available">
+                    Disponível
+                </div>
+                <div id="show-details" width=" 26px">
+                    <i class="material-symbols-rounded">
+                        add
+                    </i>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var floorSelect = document.getElementById('floor-select');
+
+            // Add event listener to the select element
+            floorSelect.addEventListener('change', function () {
+                var selectedValue = floorSelect.value;
+
+                var roomItems = document.getElementsByClassName('room-item');
+
+                // Loop through each room item and update visibility based on the selected value
+                for (var i = 0; i < roomItems.length; i++) {
+                    var roomItem = roomItems[i];
+                    var roomValue = roomItem.getAttribute('data-value');
+
+                    if (roomValue === selectedValue) {
+                        roomItem.style.display = 'block';
+                    } else {
+                        roomItem.style.display = 'none';
+                    }
+                }
+            });
+
+            // Trigger the change event on page load to apply initial filtering
+            floorSelect.dispatchEvent(new Event('change'));
+        });
+
+        // Get the select element
+        var floorSelect = document.getElementById('floor-select');
+
+        // Add event listener to the select element
+        floorSelect.addEventListener('change', function () {
+            var selectedValue = floorSelect.value; // Get the selected value
+
+            // Get all the room items
+            var roomItems = document.getElementsByClassName('room-item');
+
+            // Loop through each room item and update visibility based on the selected value
+            for (var i = 0; i < roomItems.length; i++) {
+                var roomItem = roomItems[i];
+                var roomValue = roomItem.getAttribute('data-value'); // Get the data-value attribute of the room item
+
+                // Check if the room item's value matches the selected value
+                if (roomValue === selectedValue) {
+                    roomItem.style.display = 'block'; // Show the room item
+                } else {
+                    roomItem.style.display = 'none'; // Hide the room item
+                }
+            }
+        });
+    </script>
 
 </html>
